@@ -1,0 +1,113 @@
+<html>
+	<head>
+        <meta charset="utf-8">
+		<title> Доска объявлений
+		</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+		<link rel='stylesheet' href='css/bootstrap.min.css' type='text/css' media='all'>
+    <link rel="stylesheet" href="lib.css" type="text/css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="jQuery.isc/jQuery.isc.css" type="text/css" media="screen" charset="utf-8">
+  <script src="jQuery.isc/jquery-image-scale-carousel.js" type="text/javascript" charset="utf-8"></script>
+    
+     <script src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+
+    h3{
+      font-family:  "Times New Roman", serif; font-style: italic; font-weight: bold;
+    }
+    h5{
+      font-family:  "Times New Roman", serif; font-style: italic; 
+    }
+    .layer {
+    height: 300px; /* Высота блока */
+    width: 1350px; /* Ширина блока */
+   /* Параметры рамки */
+   }
+    </style>
+
+			</head>
+			<body style=" background: #FFEFD5">
+      <center>
+        <br>
+        <div id="video"  class="layer" >
+      </div>
+      </center>
+
+            <br><br><br>
+            <center><h3><font color="CD5555"> Категории объявлений: </font></h3></center> 
+            <br><br>
+            <div class="row">
+            <div class="col-sm-4"> <center>
+               <a href="animals.html"><img src ="image_basic/1.png" ></a>
+               <a href="animals.html"><h4>Animals</h4></a>
+               
+              <h5><font color="8B8989"> Публикация на лучших порталах о животных</h5>
+              <br><br><br>
+              <a href="jobs.html"><img src="image_basic/6.png"></a>
+              <a href="jobs.html"> <h4>Jobs</h4></a>
+               
+              <h5>Размещение ваканский на всех сайтах</h5>
+              <br><br><br>
+              <a href="property.html"><img src ="image_basic/7.png" ></a>
+               <a href="property.html"><h4>Property</h4></a>
+               
+              <h5>Сайты для продажи и сдачи недвижимости</h5>
+               </center>
+            </div>
+            <div class="col-sm-4"> <center>
+             <a href="cars.html"><img src ="image_basic/2.png" ></a>
+               <a href="cars.html"><h4>Cars</h4></a>
+               
+              <h5>Быстрая и удобная продажа транспорта</h5>
+              <br><br><br>
+              <a href="goods.html"><img src ="image_basic/5.png" ></a>
+               <a href="goods.html"><h4>Goods</h4></a>
+               
+              <h5>Реклама товаров на поппулярных сайтах</h5>
+              <br><br><br>
+              <a href="services.html"><img src ="image_basic/8.png" ></a>
+               <a href="services.html"><h4>Services</h4></a>
+               
+              <h5>Основные сайты для ркламы услуг в одном сервисе</h5>
+               </center>
+            </div>
+            <div class="col-sm-4"><center>
+            	<a href="constraction.html"><img src ="image_basic/3.png" ></a>
+               <a href="constraction.html"><h4>Construction</h4></a>
+               
+              <h5>Публикация на лучших строительных порталах</h5>
+              <br><br><br>
+              <a href="overseas_property.html"><img src ="image_basic/4.png"></a>
+               <a href="overseas_property.html"><h4>Overseas property</h4></a>
+               
+              <h5>Лучшие сайты для продажи и аренды</h5>
+              <br><br><br>
+              <a href="bussiness.html"><img src ="image_basic/9.png"></a>
+               <a href="bussiness.html"><h4>Bussiness</h4></a>
+               
+              <h5>Размещение объявлений о продаже, аренде готового бизнеса, партнерстве</h5>
+            </center>
+            </div>
+            </div>
+
+            
+			
+
+			</body>
+      <script>
+      var carousel_images = [
+      
+      "http://farm3.static.flickr.com/2769/4481220450_91b0aa9e99_b.jpg",
+      "http://farm4.static.flickr.com/3235/2925947121_8b1f95c95b_b.jpg",
+      "http://farm1.static.flickr.com/118/299048945_faba1a6a4b_b.jpg",
+      "http://farm4.static.flickr.com/3089/2335224771_cec36d33a6_o.jpg" // Example of a local image
+    ];
+    
+    // Example without autoplay
+    $(window).load(function() {
+      $("#video").isc({
+        imgArray: carousel_images
+      }); 
+    });
+      </script>
+</html>

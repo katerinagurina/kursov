@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta charset="utf-8">
+	<title>  Недвижимость</title>
+	<link rel='stylesheet' href='bootstrap.min.css' type='text/css' media='all'>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script  src="js/my.js"></script>
+	<style>
+	.round{
+		border-radius: 100px;
+		border: 3px;
+		box-shadow: 0 0 0 3px #666;
+	}
+	h3{
+      font-family:  "Times New Roman", serif; font-style: italic; font-weight: bold;
+    }
+    h6{
+      font-family:  "Times New Roman", serif; font-style: italic; 
+    }
+	</style>
+</head>
+<body style=" background: #FFEFD5">
+  <center><h3 class="bg-info"> Недвижимость </h3></center>
+    <div>
+  <a onclick="main()"><h4>&nbsp<i class="glyphicon glyphicon-home">&nbspГлавная</i></h4></a>
+   </div>
+    <center>
+    <form role="form" class="form-inline" style="margin-left:1000px">
+      <div class="form-group">
+        <input type="search" class="form-control" id="search2" placeholder="Поиск по дате">
+        <button type="button" id="search_data_property" class="btn btn-primary btn-sm">Поиск</button>
+        <p id="an_dat"></p>
+      </div>
+        <div class="form-group">
+          <input type="search" class="form-control" id="search3" placeholder="Поиск по теме">
+          <button type="button" id="search_title_property" class="btn btn-primary btn-sm">Поиск</button>
+        </div>
+      
+    </form><br><br>
+    <div id="table_property"></div>
+</center>
+</body>
+</html>
+<script>
+var category="property";
+get(category);
+$('#search_data_property').click(function(){
+  $('#an_dat').html('');
+  var input_date=$('#search2').val();
+  var t=input_date.split('-');
+  if ((t.length!=3)||(isNaN(t[0]))||(isNaN(t[1]))||(isNaN(t[2]))) {
+    
+      $('#an_dat').html('Cтрока не является датой,формат даты YYYY-MM-DD<br><br>');
+      $('#search2').val("");
+
+    }
+  else{
+  search_data(input_date,category);
+  $('#search2').val("");
+}});
+$('#search_title_property').click(function(){
+  var input_date=$('#search3').val();
+  search_title(input_date,category);
+  $('#search3').val("");
+});
+</script>
